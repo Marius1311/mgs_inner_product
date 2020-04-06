@@ -25,8 +25,8 @@ def mgs_inner_prod(Z: np.ndarray, A: Optional[np.ndarray] = None, check_pd: bool
         must be symmetric positive definite. If None, identify matrix
         is assumed
     check_pd
-        checks whether A is positive definite. This takes a while, so
-        we don't do it by default.
+        checks whether A is positive definite. This can be turned off -
+        it's usually the most expensive computation performed. 
 
     Returns
     --------
